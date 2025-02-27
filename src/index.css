@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-.nav-list-items{
-  color: #2F2F2F;
-  font-size: 100px;
+body{
+  width: 88%;
+  margin: 0 auto;
 }
