@@ -2,21 +2,21 @@ import { NavLink } from "react-router-dom"
 import logo from "../images/cta/Logo (1).png"
 import { PiShoppingCartThin } from "react-icons/pi";
 import { FaAngleDown } from "react-icons/fa";
-
+import { RxHamburgerMenu } from "react-icons/rx";
 
 function Navbar() {
     return (
-        <nav className=" h-[65px] top-[36px] left-[100px] gap-[303px] flex justify-between items-center py-12">
+        <nav className=" h-[65px] top-[36px] left-[100px]  flex justify-between items-center py-12">
             <div>
                 <NavLink to={"/"}>
                     <img
-                        className="w-[150px]"
+                        className="w-[100px] md:w-[150px]"
                         src={logo}
                         alt="logo"
                     />
                 </NavLink>
             </div>
-            <div className="flex justify-between items-center">
+            <div className="hidden md:flex md:justify-between items-center">
                 <ul className="flex gap-8">
                     <li className=""><div className="flex flex-col items-start">
                         <span className="text-[9px] font-bold text-[#5236FF]">01</span>
@@ -48,13 +48,14 @@ function Navbar() {
                     </li>
                 </ul>
             </div>
-            <div>
-                <div className="flex justify-between items-center gap-6">
+            <div className="">
+                <div className="hidden md:flex justify-between items-center gap-6">
                     <div className="bg-[#5956E9] p-1 gap-10 flex justify-center rounded-full">
                         <PiShoppingCartThin className=" text-white" />
                     </div>
                     <button className="py-[8px] px-[24px] border border-[#E0E0E0] rounded-[62px] cursor-pointer text-[#2F2F2F] font-bold">Sign In</button>
                 </div>
+                <RxHamburgerMenu className="block md:hidden" />
             </div>
         </nav>
     )
