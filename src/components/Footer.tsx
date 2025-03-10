@@ -1,4 +1,5 @@
 import logo from "../images/cta/Logo (1).png"
+import { FcCheckmark } from "react-icons/fc";
 
 export default function Footer() {
     return (
