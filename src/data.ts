@@ -24,8 +24,4 @@ export const footerData = [
     id: 6,
     name: "Analytics tools",
   },
-  {
-    id: 7,
-    name: "No credit card required
-  }
 ];
