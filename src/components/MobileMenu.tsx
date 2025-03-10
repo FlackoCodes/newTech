@@ -26,7 +26,6 @@ export default function MobileMenu({ closeModal: closeModal }: ModalPopupProps) 
                     <button className="py-[8px] px-[24px] border border-[#E0E0E0] rounded-[62px] cursor-pointer text-[#2F2F2F] font-bold">Sign In</button>
                 </div>
             </div>
-
         </div>
     );
 }
