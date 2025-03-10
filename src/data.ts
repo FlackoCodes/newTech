@@ -25,3 +25,10 @@ export const footerData = [
     name: "Analytics tools",
   },
 ];
+
+
+export const utilityPages = [
+    {
+        id: 1,
+        page: "Contact",}
+]
