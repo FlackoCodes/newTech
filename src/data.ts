@@ -41,23 +41,42 @@ export const resourcesPages = [
   },
   {
     id: 4,
-    page: "Pricing",
-  },
-  {
-    id: 5,
     page: "Blog",
   },
   {
-    id: 6,
+    id: 5,
     page: "Blog Post ",
   },
   {
-    id: 7,
+    id: 6,
     page: "Pricing",
   },
   {
-    id: 8,
+    id: 7,
     page: "Pricing Single",
+  },
+];
+
+export const resourcesPageTwo = [
+  {
+    id: 1,
+    page: "Blog",
+  },
+  {
+    id: 2,
+    page: "Blog Post",
+  },
+  {
+    id: 3,
+    page: "Careers",
+  },
+  {
+    id: 4,
+    page: "Why Choose us",
+  },
+  {
+    id: 5,
+    page: "Case Studies",
   },
 ];
 

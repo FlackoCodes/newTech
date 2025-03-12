@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
-import { footerData, utilityPages } from "../data";
+import { footerData, utilityPages, resourcesPages, resourcesPageTwo } from "../data";
 import logo from "../images/cta/Logo (1).png"
 import { FcCheckmark } from "react-icons/fc";
 
 
 export default function Footer() {
     return (
-        <footer className="w-[70%] my-0 mx-auto">
+        <footer className="w-[78%] my-0 mx-auto">
             <div className="border-y border-[#E0E0E0] py-6">
                 <div className="flex justify-between items-center">
                     <img
@@ -17,17 +17,41 @@ export default function Footer() {
                     <button className="py-[8px] px-[24px] border border-[#E0E0E0] rounded-[62px] cursor-pointer text-[#2F2F2F] font-bold">See our Case Studies</button>
                 </div>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 py-6">
-                <div className="border-r border-[#E0E0E0]">
-                    <div></div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 py-6">
+                <div className="border-r border-[#E0E0E0] grid grid-cols-1 md:grid-cols-2 gap-24">
                     <div className="tracking-tight">
                         <header>
-                            <h4 className="font-[Mullish] text-[#2F2F2F] text-2xl font-bold">Utility Pages</h4>
+                            <h4 className="font-sans text-[#2F2F2F] text-2xl font-bold">Resources</h4>
+                        </header>
+                        <div className="grid grid-cols-2 gap-8">
+                            <div>
+                                {
+                                    resourcesPages.map((item) => (
+                                        <div key={item.id} className="flex gap-2 items-center my-2">
+                                            <Link to={`/${item.page}`} className="font-semibold font-sans  text-start text-[#808080]">{item.page}</Link>
+                                        </div>
+                                    ))
+                                }
+                            </div>
+                            <div>
+                                {
+                                    resourcesPageTwo.map((item) => (
+                                        <div key={item.id} className="flex gap-2 items-center my-2">
+                                            <Link to={`/${item.page}`} className="font-semibold font-sans  text-start text-[#808080]">{item.page}</Link>
+                                        </div>
+                                    ))
+                                }
+                            </div>
+                        </div>
+                    </div>
+                    <div className="tracking-tight">
+                        <header>
+                            <h4 className="font-sans text-[#2F2F2F] text-2xl font-bold">Utility Pages</h4>
                         </header>
                         {
                             utilityPages.map((item) => (
                                 <div key={item.id} className="flex gap-2 items-center my-2">
-                                    <Link to={`/${item.page}`} className="font-semibold font-mono  text-start text-[#808080]">{item.page}</Link>
+                                    <Link to={`/${item.page}`} className="font-semibold font-sans  text-start text-[#808080]">{item.page}</Link>
                                 </div>
                             ))
                         }
