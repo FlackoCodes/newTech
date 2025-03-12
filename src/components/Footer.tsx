@@ -17,8 +17,8 @@ export default function Footer() {
                     <button className="py-[8px] px-[24px] border border-[#E0E0E0] rounded-[62px] cursor-pointer text-[#2F2F2F] font-bold">See our Case Studies</button>
                 </div>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 py-6">
-                <div className="md:border-r border-[#E0E0E0] grid grid-cols-1 md:grid-cols-2 gap-24">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 py-6">
+                <div className="lg:border-r border-[#E0E0E0] grid grid-cols-1 md:grid-cols-2 gap-24">
                     <div className="tracking-tight">
                         <header>
                             <h4 className="font-sans text-[#2F2F2F] text-2xl font-bold">Resources</h4>
@@ -57,8 +57,8 @@ export default function Footer() {
                         }
                     </div>
                 </div>
-                <div className="bg-[#2F2F2F] rounded-2xl grid grid-cols-1 md:grid-cols-2 gap-2 p-6">
-                    <div className="md:border-r border-[#E0E0E0] grid place-content-center align-middle">
+                <div className="bg-[#2F2F2F] rounded-2xl grid grid-cols-1 lg:grid-cols-2 gap-2 p-6">
+                    <div className="lg:border-r border-[#E0E0E0] grid place-content-center align-middle">
                         <button className="bg-gradient-to-r from-[#5956E9] to-[#E541ED] py-2 px-3 rounded-full text-white cursor-pointer font-bold">Click</button>
                         <div className="flex items-center gap-2 my-4 font-[Mulish] text-white">
                             <h2 className="align-middle text-2xl font-bold capitalize">startup</h2>
@@ -66,7 +66,7 @@ export default function Footer() {
                         </div>
                         <button className="bg-[#424242] text-white px-3 py-2 rounded-full cursor-pointer font-bold">Popular</button>
                     </div>
-                    <div className="py-6 px-2">
+                    <div className="py-6 px-2 grid md:flex flex-col items-center">
                         {footerData.map((item) => (
                             <div key={item.id} className="flex gap-2 items-center my-1">
                                 <FcCheckmark className="text-white" />
