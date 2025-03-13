@@ -5,16 +5,20 @@ import { FcCheckmark } from "react-icons/fc";
 
 
 export default function Footer() {
+
+    const date = new Date()
+    const year = date.getFullYear()
+
     return (
         <footer className="w-[78%] my-0 mx-auto">
             <div className="border-y border-[#E0E0E0] py-6">
-                <div className="flex justify-between items-center">
+                <div className="hidden md:flex justify-between items-center">
                     <img
                         className="w-[100px] md:w-[150px]"
                         src={logo}
                         alt="logo"
                     />
-                    <button className="py-[8px] px-[24px] border border-[#E0E0E0] rounded-[62px] cursor-pointer text-[#2F2F2F] font-bold">See our Case Studies</button>
+                    <button className="hidden md:block py-[8px] px-[24px] border border-[#E0E0E0] rounded-[62px] cursor-pointer text-[#2F2F2F] font-bold">See our Case Studies</button>
                 </div>
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 py-6">
@@ -75,6 +79,9 @@ export default function Footer() {
                         ))}
                     </div>
                 </div>
+            </div>
+            <div className="md:border-t border-[#E0E0E0] pt-6 pb-2.5">
+                <p className="font-sans text-bold text-[#808080]">Copyright © {year}  <Link className="text-gray-950 font-bold" to={"https://github.com/FlackoCodes"}>Flacko</Link> | Designed by VictorFlow Templates</p>
             </div>
         </footer>
     )
