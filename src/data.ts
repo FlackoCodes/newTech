@@ -1,3 +1,7 @@
+import image1 from "./images/Art-Img-1.png";
+import image2 from "./images/Art-Img-2.jpg";
+import image3 from "./images/Art-Img-3.png";
+
 export const footerData = [
   {
     id: 1,
@@ -104,5 +108,35 @@ export const utilityPages = [
   {
     id: 6,
     page: "Changelog",
+  },
+];
+
+export const articles = [
+  {
+    id: 1,
+    Image: image1,
+    title: "Detailed insights for your social media",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.",
+    date: "Jan 1, 2023",
+    read: "3 min read",
+  },
+  {
+    id: 2,
+    Image: image2,
+    title: "New Device Invention for Digital Platforms",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.",
+    date: "Jan 1, 2023",
+    read: "3 min read",
+  },
+  {
+    id: 3,
+    Image: image3,
+    title: "Business Strategy Make His Goal Acheive",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.",
+    date: "Jan 1, 2023",
+    read: "3 min read",
   },
 ];

@@ -8,10 +8,11 @@ export default function Footer() {
 
     const date = new Date()
     const year = date.getFullYear()
+    const github = "https://github.com/FlackoCodes"
 
     return (
         <footer className="w-[78%] my-0 mx-auto">
-            <div className="border-y border-[#E0E0E0] py-6">
+            <div className="border-b border-[#E0E0E0] py-6">
                 <div className="hidden md:flex justify-between items-center">
                     <img
                         className="w-[100px] md:w-[150px]"
@@ -81,7 +82,7 @@ export default function Footer() {
                 </div>
             </div>
             <div className="md:border-t border-[#E0E0E0] pt-6 pb-2.5">
-                <p className="font-sans text-bold text-[#808080]">Copyright © {year}  <Link className="text-gray-950 font-bold" to={"https://github.com/FlackoCodes"}>Flacko</Link> | Designed by VictorFlow Templates</p>
+                <p className="font-sans text-bold text-[#808080]">Copyright © {year}  <Link className="text-gray-950 font-bold" to={github}>Flacko</Link> | Designed by VictorFlow Templates</p>
             </div>
         </footer>
     )
