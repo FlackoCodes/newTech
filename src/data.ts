@@ -140,3 +140,26 @@ export const articles = [
     read: "3 min read",
   },
 ];
+
+export const stats = [
+  {
+    id: 1,
+    title: "10 years",
+    description: "in Business",
+  },
+  {
+    id: 2,
+    title: "75,000+",
+    description: "customers",
+  },
+  {
+    id: 3,
+    title: "100k",
+    description: "monthly blog readers",
+  },
+  {
+    id: 4,
+    title: "1.2m+",
+    description: "social followers",
+  },
+];
