@@ -1,6 +1,12 @@
 import image1 from "./images/Art-Img-1.png";
 import image2 from "./images/Art-Img-2.jpg";
 import image3 from "./images/Art-Img-3.png";
+import icon1 from "./images/Icons/Icon (1).svg";
+import icon2 from "./images/Icons/Icon (2).svg";
+import icon3 from "./images/Icons/Icon (3).svg";
+import icon4 from "./images/Icons/Icon (4).svg";
+import icon5 from "./images/Icons/Icon (5).svg";
+import icon6 from "./images/Icons/icon-6.svg";
 
 export const footerData = [
   {
@@ -161,5 +167,62 @@ export const stats = [
     id: 4,
     title: "1.2m+",
     description: "social followers",
+  },
+];
+
+export const features = [
+  {
+    id: 1,
+    header: "publish",
+    title: "Save time by scheduling posts",
+    description:
+      "Building an enterprisedoesn't need nightmare or cost your thousands. Felix is purpose built.",
+    icon: icon1,
+    start: "get started",
+  },
+  {
+    id: 2,
+    header: "respond",
+    title: "All your conversations in one place",
+    description:
+      "Building an enterprisedoesn't need nightmare or cost your thousands. Felix is purpose built.",
+    icon: icon2,
+    start: "get started",
+  },
+  {
+    id: 3,
+    header: "automate",
+    title: "Truly automate your social media",
+    description:
+      "Building an enterprisedoesn't need nightmare or cost your thousands. Felix is purpose built.",
+    icon: icon3,
+    start: "get started",
+  },
+  {
+    id: 4,
+    header: "monitor",
+    title: "Save time by scheduling postsListen to what they say about you",
+    description:
+      "Building an enterprisedoesn't need nightmare or cost your thousands. Felix is purpose built.",
+    icon: icon4,
+    start: "get started",
+  },
+  {
+    id: 5,
+    header: "analyze",
+    title: "Detailed insights for your social media",
+    description:
+      "Building an enterprisedoesn't need nightmare or cost your thousands. Felix is purpose built.",
+    icon: icon5,
+    start: "get started",
+  },
+  {
+    id: 6,
+    header: "creative content",
+    title: "Artificial Intelligence trained Team",
+    description:
+      "Building an enterprisedoesn't need nightmare or cost your thousands. Felix is purpose built.",
+    icon: icon6,
+    start: "get started",
   },
 ];
