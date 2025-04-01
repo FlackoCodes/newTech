@@ -1,6 +1,6 @@
 import background from "../../images/img/contact-bg.jpg"
 import social from "../../images/img/socialImage.png"
-import socials from "../../images/img/socials.png"
+import socials from "../../images/img/image-socials.jpg"
 
 export default function OurSocials() {
     return (
@@ -12,13 +12,13 @@ export default function OurSocials() {
                         <p className="text-[#FFFFFF] font-[Poppins]">Crush your social goals.Again and again</p>
                     </div>
                     <button className="my-2 rounded-full bg-white text-black md:py-2 py-2 px-4 md:px-6 font-[Poppins] cursor-grab w-fit">Get Started</button>
-                    <div className="absolute top-0 left-0 w-[800px] h-[300px] mb-20">
-                        <img src={social} alt="people connecting " className="block" />
+                    <div className="absolute top-40 left-0 lg:w-[900px] lg:h-[200px] mb-20">
+                        <img src={social} alt="people connecting " className="rounded" />
                     </div>
                 </div>
             </section>
-            <section className="mt-48">
-                <div className="md:w-[60%] my-0 mx-auto grid grid-cols-1 md:grid-cols-2">
+            <section className="mt-[450px]">
+                <div className="md:w-[60%] my-0 mx-auto flex flex-col lg:flex-row justify-start lg:justify-center">
                     <div className="flex flex-col gap-2">
                         <p className="font-bold font-[Poppins] text-black md:text-2xl text-start w-[300px]">Connect all the social networks you love</p>
                         <p className="text-[#808080] font-[Poppins] text-sm text-start w-[400px]">
@@ -27,7 +27,7 @@ export default function OurSocials() {
                         <button className="my-2 rounded-full bg-black text-white md:py-2 py-2 px-4 md:px-6 font-[Poppins] cursor-grab w-fit">Get Started</button>
                     </div>
                     <div>
-                        {socials}
+                        <img src={socials} alt="social media icons" />
                     </div>
                 </div>
             </section>
