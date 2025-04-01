@@ -1,6 +1,8 @@
 import background from "../../images/img/contact-bg.jpg"
 import social from "../../images/img/socialImage.png"
 import socials from "../../images/img/image-socials.jpg"
+import mediaBackground from "../../images/img/social-Img.png"
+import { socialsData } from "../../data"
 
 export default function OurSocials() {
     return (
@@ -28,6 +30,28 @@ export default function OurSocials() {
                     </div>
                     <div>
                         <img src={socials} alt="social media icons" />
+                    </div>
+                </div>
+            </section>
+            <section className="w-[78%] my-0 mx-auto">
+                <div className="grid grid-cols-1 gap-8 lg:grid-cols-[1fr_2fr]">
+                    <div style={{ backgroundImage: `url(${mediaBackground})` }} className="bg-cover bg-center bg-no-repeat p-8 flex flex-col gap-2 rounded">
+                        <h5 className="md:font-bold text-2xl text-white font-[Poppins] w-[280px]">Our Working Process - How We Work For Our Customers</h5>
+                        <p className="font-[Montserrat] text-white">We currently support Facebook, Instagram, LinkedIn and Twitter. More to come.</p>
+                        <button className="my-2 rounded-full bg-white text-black md:py-2 py-2 px-4 md:px-6 font-[Poppins] cursor-grab w-fit">Get Started</button>
+                    </div>
+                    <div className="grid grid-cols-1 lg:grid-cols-2">
+                        {
+                            socialsData.map((data, index) =>
+                                <div className="flex flex-col gap-2" key={index}>
+                                    <div className="font-bold font-[Poppins] md:text-2xl">
+                                        <h2 className={index == 1 ? "text-[#5956E9]" : "text-black"}>{data.id}</h2>
+                                    </div>
+                                    <h3>{data.title}</h3>
+                                    <p className="w-[350px]">{data.description}</p>
+                                </div>
+                            )
+                        }
                     </div>
                 </div>
             </section>

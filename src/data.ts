@@ -226,3 +226,30 @@ export const features = [
     start: "get started",
   },
 ];
+
+export const socialsData = [
+  {
+    id: "01",
+    title: "Create your free account",
+    description:
+      "Building ddfgan enterprise doesn't need nightmare or cost your thousands. Felix is purpose built.",
+  },
+  {
+    id: "02",
+    title: "Connect your channels",
+    description:
+      "Building ddfgan enterprisedoesn't need nightmare or cost your thousands. Felix is purpose built.",
+  },
+  {
+    id: "03",
+    title: "Schedule your posts",
+    description:
+      "Building ddfgan enterprisedoesn't need nightmare or cost your thousands. Felix is purpose built.",
+  },
+  {
+    id: "04",
+    title: "Publish & get your planning on point",
+    description:
+      "Building ddfgan enterprisedoesn't need nightmare or cost your thousands. Felix is purpose built.",
+  },
+];
