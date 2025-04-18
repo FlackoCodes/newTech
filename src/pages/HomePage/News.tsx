@@ -23,8 +23,8 @@ export default function News() {
                                 <span className="text-[#808080] font-bold text-sm">{item.read}</span>
                             </div>
                             <div className="flex flex-col gap-2">
-                                <h4 className="text-[#2F2F2F] text-xl font-bold font-[Poppins]">{item.title}</h4>
-                                <p className="text-[16px] text-[#808080]">{item.description}</p>
+                                <h4 className="text-[#2F2F2F] text-xl font-bold font-[Poppins] md:w-[330px]">{item.title}</h4>
+                                <p className="text-[16px] text-[#808080] md:w-[330px]">{item.description}</p>
                             </div>
                         </div>
                     ))

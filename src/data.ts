@@ -8,6 +8,9 @@ import icon4 from "./images/Icons/Icon (4).svg";
 import icon5 from "./images/Icons/Icon (5).svg";
 import icon6 from "./images/Icons/icon-6.svg";
 
+const enterprise: string =
+  "Building an enterprisedoesn't need nightmare or cost your thousands. Felix is purpose built.";
+
 export const footerData = [
   {
     id: 1,
@@ -175,8 +178,7 @@ export const features = [
     id: 1,
     header: "publish",
     title: "Save time by scheduling posts",
-    description:
-      "Building an enterprisedoesn't need nightmare or cost your thousands. Felix is purpose built.",
+    description: enterprise,
     icon: icon1,
     start: "get started",
   },
@@ -184,8 +186,7 @@ export const features = [
     id: 2,
     header: "respond",
     title: "All your conversations in one place",
-    description:
-      "Building an enterprisedoesn't need nightmare or cost your thousands. Felix is purpose built.",
+    description: enterprise,
     icon: icon2,
     start: "get started",
   },
@@ -193,8 +194,7 @@ export const features = [
     id: 3,
     header: "automate",
     title: "Truly automate your social media",
-    description:
-      "Building an enterprisedoesn't need nightmare or cost your thousands. Felix is purpose built.",
+    description: enterprise,
     icon: icon3,
     start: "get started",
   },
@@ -202,8 +202,7 @@ export const features = [
     id: 4,
     header: "monitor",
     title: "Save time by scheduling postsListen to what they say about you",
-    description:
-      "Building an enterprisedoesn't need nightmare or cost your thousands. Felix is purpose built.",
+    description: enterprise,
     icon: icon4,
     start: "get started",
   },
@@ -211,8 +210,7 @@ export const features = [
     id: 5,
     header: "analyze",
     title: "Detailed insights for your social media",
-    description:
-      "Building an enterprisedoesn't need nightmare or cost your thousands. Felix is purpose built.",
+    description: enterprise,
     icon: icon5,
     start: "get started",
   },
@@ -220,8 +218,7 @@ export const features = [
     id: 6,
     header: "creative content",
     title: "Artificial Intelligence trained Team",
-    description:
-      "Building an enterprisedoesn't need nightmare or cost your thousands. Felix is purpose built.",
+    description: enterprise,
     icon: icon6,
     start: "get started",
   },
@@ -231,25 +228,21 @@ export const socialsData = [
   {
     id: "01",
     title: "Create your free account",
-    description:
-      "Building ddfgan enterprise doesn't need nightmare or cost your thousands. Felix is purpose built.",
+    description: enterprise,
   },
   {
     id: "02",
     title: "Connect your channels",
-    description:
-      "Building ddfgan enterprisedoesn't need nightmare or cost your thousands. Felix is purpose built.",
+    description: enterprise,
   },
   {
     id: "03",
     title: "Schedule your posts",
-    description:
-      "Building ddfgan enterprisedoesn't need nightmare or cost your thousands. Felix is purpose built.",
+    description: enterprise,
   },
   {
     id: "04",
     title: "Publish & get your planning on point",
-    description:
-      "Building ddfgan enterprisedoesn't need nightmare or cost your thousands. Felix is purpose built.",
+    description: enterprise,
   },
 ];
