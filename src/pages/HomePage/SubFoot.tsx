@@ -8,15 +8,20 @@ export default function SubFoot() {
                 <div className="flex flex-col font-bold">
                     <h3 className="my-2 font-bold text-white md:text-4xl">Start your 7-day free trial</h3>
                     <p className="my-4 font-normal text-white md:text-lg">Felix can help bring your dream website to life with ease.</p>
-                    <div>
-                        <input type="text" className="bg-white py-2 px-10 outline-0 rounded-full" placeholder="Enter your email" />
+                    <div className="relative">
+                        <input type="text" className="bg-white py-4 px-16 outline-0 rounded-full" placeholder="Enter your email" />
+                        <button className="absolute left-50 top-2.5 bg-black text-white py-2 px-4 rounded-full">Get Started</button>
                     </div>
-                    <div className="flex gap-2 mt-4">
-
+                    <div >
+                        <ul className="flex gap-1.5 mt-4 text-sm text-[#FFFFFF] list-disc list-inside">
+                            <li>Free 7-day trial</li>
+                            <li>No credit card required</li>
+                            <li>Cancel anytime</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <img src={subImg} alt="" className="absolute -top-12 right-6 w-[450px] hidden lg:block"/>
+            <img src={subImg} alt="" className="absolute -top-12 right-6 w-[450px] hidden lg:block" />
 
         </section>
     )
