@@ -41,7 +41,6 @@ export default function HomeFeatures() {
                     <h4>Simple, yet Powerful Features</h4>
                 </header>
 
-                {/* Grid container for features */}
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
                     {
                         features.map((feature) => (

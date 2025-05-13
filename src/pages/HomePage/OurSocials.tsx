@@ -43,12 +43,12 @@ export default function OurSocials() {
                     <div className="grid grid-cols-1 lg:grid-cols-2">
                         {
                             socialsData.map((data, index) =>
-                                <div className="flex flex-col gap-2" key={index}>
-                                    <div className="font-bold font-[Poppins] md:text-2xl">
+                                <div className="flex flex-col gap-2 font-bold" key={index}>
+                                    <div className="font-normal font-[Poppins] md:text-2xl">
                                         <h2 className={index == 1 ? "text-[#5956E9]" : "text-black"}>{data.id}</h2>
                                     </div>
-                                    <h3>{data.title}</h3>
-                                    <p className="w-[350px]">{data.description}</p>
+                                    <h3 className="font-bold text-[#2F2F2F] md:text-xl">{data.title}</h3>
+                                    <p className="w-[350px] text-[#808080]">{data.description}</p>
                                 </div>
                             )
                         }

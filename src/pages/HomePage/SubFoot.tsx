@@ -3,17 +3,21 @@ import subImg from "../../images/img/sub-foot.png"
 
 export default function SubFoot() {
     return (
-        <section className="w-[78%] my-0 mx-auto mt-2 md:mt-10" >
-            <div style={{ backgroundImage: `url(${subBg})` }} className="bg-cover bg-no-repeat bg-center rounded p-20">
+        <section className="w-[78%] my-0 mx-auto mt-2 md:mt-10 lg:my-40 relative" >
+            <div style={{ backgroundImage: `url(${subBg})` }} className="bg-cover bg-no-repeat bg-center rounded-lg p-20">
                 <div className="flex flex-col font-bold">
-                    <h3 className="my-2 font-bold text-white md:text-xl">Start your 7-day free trial</h3>
-                    <p className="my-4 font-bold text-white md:text-2xl">Felix can help bring your dream website to life with ease.</p>
+                    <h3 className="my-2 font-bold text-white md:text-4xl">Start your 7-day free trial</h3>
+                    <p className="my-4 font-normal text-white md:text-lg">Felix can help bring your dream website to life with ease.</p>
                     <div>
                         <input type="text" className="bg-white py-2 px-10 outline-0 rounded-full" placeholder="Enter your email" />
                     </div>
-                    <div></div>
+                    <div className="flex gap-2 mt-4">
+
+                    </div>
                 </div>
             </div>
+            <img src={subImg} alt="" className="absolute -top-12 right-6 w-[450px] hidden lg:block"/>
+
         </section>
     )
 }
