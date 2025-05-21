@@ -1,11 +1,24 @@
 import { FcCheckmark } from "react-icons/fc";
 import featImage from "../../images/img/featImage.png";
 import { features } from "../../data";
+import home from "../../images/img/home.svg"
+import vs from "../../images/img/vs.svg"
+import brand from "../../images/img/brand.svg"
+import nature from "../../images/img/nature.svg"
+import classic from "../../images/img/classic.svg"
+
 
 export default function HomeFeatures() {
     return (
         <section className="mt-80">
             <div className="w-[78%] my-0 mx-auto">
+                <div className="flex justify-center items-center gap-6 lg:mb-10">
+                    <img className="w-[60px]" src={home} alt="home-logo" />
+                    <img className="w-[60px]" src={vs} alt="vs-brand-logo" />
+                    <img className="w-[60px]" src={brand} alt="brand-logo" />
+                    <img className="w-[60px]" src={nature} alt="nature-logo" />
+                    <img className="w-[60px]" src={classic} alt="classic-logo" />
+                </div>
                 <div className="grid grid-cols-1 md:grid-cols-2">
                     <div className="flex flex-col gap-2 text-start">
                         <header>

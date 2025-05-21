@@ -4,10 +4,17 @@ import socials from "../../images/img/image-socials.jpg"
 import mediaBackground from "../../images/img/social-Img.png"
 import { socialsData } from "../../data"
 
+import home from "../../images/img/home.svg"
+import vs from "../../images/img/vs.svg"
+import brand from "../../images/img/brand.svg"
+import nature from "../../images/img/nature.svg"
+import classic from "../../images/img/classic.svg"
+
+
 export default function OurSocials() {
     return (
         <div>
-            <section style={{ backgroundImage: `url(${background})` }} className="bg-cover bg-center bg-no-repeat my-12 p-36">
+               <section style={{ backgroundImage: `url(${background})` }} className="bg-cover bg-center bg-no-repeat my-12 p-36">
                 <div className="w-[78%] mx-auto flex justify-between items-center relative">
                     <div className="flex flex-col gap-2">
                         <h6 className="w-[350px] text-start md:text-4xl md:font-bold text-[#FFFFFF]">Doing Everything Yourself is Difficult</h6>
