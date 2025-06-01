@@ -4,24 +4,19 @@ import socials from "../../images/img/image-socials.jpg"
 import mediaBackground from "../../images/img/social-Img.png"
 import { socialsData } from "../../data"
 
-import home from "../../images/img/home.svg"
-import vs from "../../images/img/vs.svg"
-import brand from "../../images/img/brand.svg"
-import nature from "../../images/img/nature.svg"
-import classic from "../../images/img/classic.svg"
 
 
 export default function OurSocials() {
     return (
         <div>
                <section style={{ backgroundImage: `url(${background})` }} className="bg-cover bg-center bg-no-repeat my-12 p-36">
-                <div className="w-[78%] mx-auto flex justify-between items-center relative">
+                <div className="w-[78%] mx-auto flex-col md:flex-row flex justify-between items-center relative">
                     <div className="flex flex-col gap-2">
                         <h6 className="w-[350px] text-start md:text-4xl md:font-bold text-[#FFFFFF]">Doing Everything Yourself is Difficult</h6>
                         <p className="text-[#FFFFFF] font-[Poppins]">Crush your social goals.Again and again</p>
                     </div>
                     <button className="my-2 rounded-full bg-white text-black md:py-2 py-2 px-4 md:px-6 font-[Poppins] cursor-grab w-fit">Get Started</button>
-                    <div className="absolute top-40 left-0 lg:w-[900px] lg:h-[200px] mb-20">
+                    <div className="hidden lg:block absolute top-40 left-0 lg:w-[900px] lg:h-[200px] mb-20">
                         <img src={social} alt="people connecting " className="rounded" />
                     </div>
                 </div>

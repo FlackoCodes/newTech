@@ -46,7 +46,7 @@ export const resourcesPages = [
   },
   {
     id: 2,
-    page: "About",
+    page: "About Us",
   },
   {
     id: 3,

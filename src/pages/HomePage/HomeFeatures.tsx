@@ -12,7 +12,7 @@ export default function HomeFeatures() {
     return (
         <section className="mt-80">
             <div className="w-[78%] my-0 mx-auto">
-                <div className="flex justify-center items-center gap-6 lg:mb-10">
+                <div className="flex flex-col md:flex-row justify-start  md:justify-center items-center gap-6 lg:mb-10">
                     <img className="w-[60px]" src={home} alt="home-logo" />
                     <img className="w-[60px]" src={vs} alt="vs-brand-logo" />
                     <img className="w-[60px]" src={brand} alt="brand-logo" />

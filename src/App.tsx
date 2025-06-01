@@ -6,6 +6,7 @@ import Error_404 from "./pages/Error_404";
 import Resources from "./pages/Resources";
 import Blog from "./pages/Blog";
 import Pricing from "./pages/Pricing";
+import AboutUs from "./pages/AboutUs";
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
         <Route path="/resources" element={<Resources />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/pricing" element={<Pricing />} />
+        <Route path="/About Us" element={<AboutUs />} />
         <Route path="*" element={<Error_404 />} />
       </Route>
     )
