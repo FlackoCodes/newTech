@@ -1,5 +1,4 @@
-import { articles } from "../../data"
-
+import Articles from "./Articles"
 
 export default function News() {
     return (
@@ -13,23 +12,7 @@ export default function News() {
                 </div>
                 <button className="bg-gray-100 text-[#2F2F2F] px-3 py-2 rounded-full cursor-pointer font-normal my-4 md:my-0">See More News</button>
             </div>
-            <div className="grid grid-cols-1 md:justify-items-start md:text-start lg:grid-cols-3 gap-2 my-4">
-                {
-                    articles.map((item) => (
-                        <div key={item.id} className="flex gap-3 flex-col items-center my-2">
-                            <img src={item.Image} alt="computer" className="rounded-sm w-[330px] h-[300px]" />
-                            <div className="hidden md:flex justify-between  border-b border-[#E0E0E0] w-auto md:w-[330px]">
-                                <p className="text-[#808080] font-bold text-sm">{item.date}</p>
-                                <span className="text-[#808080] font-bold text-sm">{item.read}</span>
-                            </div>
-                            <div className="flex flex-col gap-2">
-                                <h4 className="text-[#2F2F2F] text-xl font-bold font-[Poppins] md:w-[330px]">{item.title}</h4>
-                                <p className="text-[16px] text-[#808080] md:w-[330px]">{item.description}</p>
-                            </div>
-                        </div>
-                    ))
-                }
-            </div>
+            <Articles />
         </div>
     )
 }

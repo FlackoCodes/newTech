@@ -3,5 +3,5 @@ const AboutUsCTA = () => {
         <div>AboutUs</div>
     )
 }
-
+ 
 export default AboutUsCTA
