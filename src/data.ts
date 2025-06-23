@@ -91,6 +91,10 @@ export const resourcesPageTwo = [
     id: 5,
     page: "Case Studies",
   },
+  {
+    id: 6,
+    page: "Case Study Single",
+  },
 ];
 
 export const utilityPages = [

@@ -8,6 +8,7 @@ import Blog from "./pages/Blog";
 import Pricing from "./pages/Pricing";
 import AboutComp from "./pages/AboutUs/index";
 import PricingSingle from "./pages/PricingSingle";
+import CaseStudySingle from "./pages/CaseStudySingle";
 
 function App() {
 
@@ -21,6 +22,8 @@ function App() {
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/About Us" element={<AboutComp />} />
         <Route path="/Pricing Single" element={<PricingSingle
+        />} />
+        <Route path="/Case Study Single" element={<CaseStudySingle
         />} />
         <Route path="*" element={<Error_404 />} />
       </Route>
