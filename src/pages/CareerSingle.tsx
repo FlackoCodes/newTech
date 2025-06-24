@@ -47,7 +47,7 @@ export default function CareerSingle() {
                         </div>
                     </div>
                     <div className="my-2 md:my-4">
-                        <img src={careerImg} className="rounded w-auto md:w-[450px]" alt="lady behind a desktop makig a phone call" />
+                        <img src={careerImg} className="rounded w-auto md:w-[600px] md:h-[300px]" alt="lady behind a desktop makig a phone call" />
                         <div className="flex flex-col gap-2 my-4">
                             <h1 className="my-2 text-[#242331] font-bold leading-1 text-lg md:text-2xl">Job Responsibilities</h1>
                             <div className="text-[#808080]">
