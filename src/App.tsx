@@ -9,6 +9,7 @@ import Pricing from "./pages/Pricing";
 import AboutComp from "./pages/AboutUs/index";
 import PricingSingle from "./pages/PricingSingle";
 import CaseStudySingle from "./pages/CaseStudySingle";
+import CareerSingle from "./pages/CareerSingle";
 
 function App() {
 
@@ -24,6 +25,8 @@ function App() {
         <Route path="/Pricing Single" element={<PricingSingle
         />} />
         <Route path="/Case Study Single" element={<CaseStudySingle
+        />} />
+        <Route path="/Career Single" element={<CareerSingle
         />} />
         <Route path="*" element={<Error_404 />} />
       </Route>

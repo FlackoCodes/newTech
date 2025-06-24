@@ -122,6 +122,10 @@ export const utilityPages = [
     id: 6,
     page: "Changelog",
   },
+  {
+    id: 7,
+    page: "Career Single",
+  }
 ];
 
 export const articles = [
