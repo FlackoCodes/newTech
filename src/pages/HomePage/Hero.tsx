@@ -1,15 +1,25 @@
+import { LuDot } from "react-icons/lu";
+
 interface HeroProps {
     heading: string;
-    paragraph: string;
+    paragraph?: string;
     buttonText?: string;
     graphicsImage?: string;
     backgroundImage?: string;
+    profileImage?: string;
+    name?: string;
+    date?: number | string;
+    time?: string;
 } const Hero: React.FC<HeroProps> = ({
     backgroundImage,
     heading,
     paragraph,
     buttonText,
     graphicsImage,
+    profileImage,
+    date,
+    time,
+    name
 }) => {
     return (
         <div>
@@ -39,6 +49,17 @@ interface HeroProps {
                         }
 
                     </div>
+                    {profileImage && (
+                        <div className="flex justify-center items-center gap-2 font-bold text-white">
+                            <div className="flex gap-2 items-center">
+                                <img className="rounded-full" src={profileImage} />
+                                <span>{name}</span>
+                                <LuDot className="text-white" />
+                            </div>
+                            <span>{date}</span>
+                            <LuDot className="text-white" />
+                            <span>{time}</span>
+                        </div>)}
                     {graphicsImage && (
                         <div className="absolute hidden lg:block top-40 left-60 lg:w-[800px] lg:h-[200px] my-40">
                             <img src={graphicsImage} alt="media icons" className="rounded" />

@@ -11,6 +11,7 @@ import PricingSingle from "./pages/PricingSingle";
 import CaseStudySingle from "./pages/CaseStudySingle";
 import CareerSingle from "./pages/CareerSingle";
 import License from "./pages/License";
+import BlogSingle from "./pages/BlogSingle";
 
 function App() {
 
@@ -30,6 +31,8 @@ function App() {
         <Route path="/Career Single" element={<CareerSingle
         />} />
         <Route path="/Licenses" element={<License
+        />} />
+        <Route path="/Blog Post/" element={<BlogSingle
         />} />
         <Route path="*" element={<Error_404 />} />
       </Route>

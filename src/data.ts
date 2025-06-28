@@ -72,14 +72,6 @@ export const resourcesPages = [
 
 export const resourcesPageTwo = [
   {
-    id: 1,
-    page: "Blog",
-  },
-  {
-    id: 2,
-    page: "Blog Post",
-  },
-  {
     id: 3,
     page: "Careers",
   },
@@ -125,7 +117,7 @@ export const utilityPages = [
   {
     id: 7,
     page: "Career Single",
-  }
+  },
 ];
 
 export const articles = [
