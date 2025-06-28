@@ -32,7 +32,7 @@ function App() {
         />} />
         <Route path="/Licenses" element={<License
         />} />
-        <Route path="/Blog Post/" element={<BlogSingle
+        <Route path="/Blog Post" element={<BlogSingle
         />} />
         <Route path="*" element={<Error_404 />} />
       </Route>

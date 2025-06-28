@@ -58,7 +58,7 @@ export const resourcesPages = [
   },
   {
     id: 5,
-    page: "Blog Post ",
+    page: "Blog Post",
   },
   {
     id: 6,
@@ -244,5 +244,25 @@ export const socialsData = [
     id: "04",
     title: "Publish & get your planning on point",
     description: enterprise,
+  },
+];
+
+export const blogList = [
+  {
+    id: 1,
+    title: "Listen to what they say about you",
+  },
+  {
+    id: 2,
+    title: "Randomised words which don't look even slightly believable.",
+  },
+  {
+    id: 3,
+    title:
+      "Lorem Ipsum generators on the Internet tend to repeat predefined chunks",
+  },
+  {
+    id: 4,
+    title: "Automate multiple scenarios and eliminate tedious tasks.",
   },
 ];
