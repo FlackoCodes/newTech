@@ -10,6 +10,7 @@ import AboutComp from "./pages/AboutUs/index";
 import PricingSingle from "./pages/PricingSingle";
 import CaseStudySingle from "./pages/CaseStudySingle";
 import CareerSingle from "./pages/CareerSingle";
+import License from "./pages/License";
 
 function App() {
 
@@ -27,6 +28,8 @@ function App() {
         <Route path="/Case Study Single" element={<CaseStudySingle
         />} />
         <Route path="/Career Single" element={<CareerSingle
+        />} />
+        <Route path="/Licenses" element={<License
         />} />
         <Route path="*" element={<Error_404 />} />
       </Route>
