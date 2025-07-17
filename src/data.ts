@@ -7,6 +7,10 @@ import icon3 from "./images/Icons/Icon (3).svg";
 import icon4 from "./images/Icons/Icon (4).svg";
 import icon5 from "./images/Icons/Icon (5).svg";
 import icon6 from "./images/Icons/icon-6.svg";
+import fb from "./images/img/facebook.svg"
+import google from "./images/img/Ini_tech.svg"
+import umbrella from "./images/img/Google.svg"
+import tech from "./images/img/Umbrella.svg"
 
 const enterprise: string =
   "Building an enterprisedoesn't need nightmare or cost your thousands. Felix is purpose built.";
@@ -266,3 +270,27 @@ export const blogList = [
     title: "Automate multiple scenarios and eliminate tedious tasks.",
   },
 ];
+
+
+export const investorsData = [
+  {
+    id: 1,
+    img: fb,
+    paragraph : "One of a select group of Facebook Marketing Partners in Advertising Technology and Management.Building the ddfgan enterprisedoesn't need nightmare."
+  },
+  {
+    id: 2,
+    img: tech,
+    paragraph : "One of a select group of Facebook Marketing Partners in Advertising Technology and Management.Building the ddfgan enterprisedoesn't need nightmare."
+  },
+  {
+    id: 3,
+    img: google,
+    paragraph : "One of a select group of Facebook Marketing Partners in Advertising Technology and Management.Building the ddfgan enterprisedoesn't need nightmare."
+  },
+  {
+    id: 4,
+    img: umbrella,
+    paragraph : "One of a select group of Facebook Marketing Partners in Advertising Technology and Management.Building the ddfgan enterprisedoesn't need nightmare."
+  }
+]
