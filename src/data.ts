@@ -11,6 +11,9 @@ import fb from "./images/img/facebook.svg"
 import google from "./images/img/Ini_tech.svg"
 import umbrella from "./images/img/Google.svg"
 import tech from "./images/img/Umbrella.svg"
+import Princy from "./images/img/Princy.jpg"
+import Stef from "./images/img/Stef.jpg"
+import Kat from "./images/img/Kat.jpg"
 
 const enterprise: string =
   "Building an enterprisedoesn't need nightmare or cost your thousands. Felix is purpose built.";
@@ -292,5 +295,26 @@ export const investorsData = [
     id: 4,
     img: umbrella,
     paragraph : "One of a select group of Facebook Marketing Partners in Advertising Technology and Management.Building the ddfgan enterprisedoesn't need nightmare."
+  }
+]
+
+export const teamData = [
+  {
+    id: 1,
+    img: Princy,
+    name: "Princy Flora",
+    position: "Co-Founder of Alofirm",
+  },
+  {
+     id: 2,
+    img: Stef,
+    name: "Stefhen Richards",
+    position: "CEO & Art Director",
+  },
+  {
+     id: 3,
+    img: Kat,
+    name: "Katherine",
+    position: "Head Of Finance",
   }
 ]

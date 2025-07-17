@@ -1,5 +1,5 @@
-import Hero from "../HomePage/Hero";
-import heroBg from "../../images/img/Hero-Image.jpg";
+// import Hero from "../HomePage/Hero";
+// import heroBg from "../../images/img/Hero-Image.jpg";
 
 export default function AboutHero() {
   return (
