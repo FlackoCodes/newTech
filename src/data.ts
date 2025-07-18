@@ -14,6 +14,12 @@ import tech from "./images/img/Umbrella.svg"
 import Princy from "./images/img/Princy.jpg"
 import Stef from "./images/img/Stef.jpg"
 import Kat from "./images/img/Kat.jpg"
+import icon from "./images/img/inovate.png"
+import growth from "./images/img/Growth.png"
+import own from "./images/img/Own.png"
+import team from "./images/img/Team.png"
+import commit from "./images/img/Commit.png"
+import positive from "./images/img/Positive.png"
 
 const enterprise: string =
   "Building an enterprisedoesn't need nightmare or cost your thousands. Felix is purpose built.";
@@ -317,4 +323,34 @@ export const teamData = [
     name: "Katherine",
     position: "Head Of Finance",
   }
+]
+
+export const valueData  = [
+  {
+    id:1,
+    icon: icon,
+    title: "Innovation",
+    paragraph : "Building an enterprise doesn't need nightmare or cost your thousandsFelix is purpose built.",
+  },
+  {id:2,
+    icon: growth,
+    title: "Growth",
+    paragraph : "Building an enterprise doesn't need nightmare or cost your thousands Felix is purpose built.",},
+  {id:3,
+    icon: own,
+    title: "Ownership",
+    paragraph : "Building an enterprise doesn't need nightmare or cost your thousandsFelix is purpose built",},
+  {id:4,
+    icon: team,
+    title: "Team Work",
+    paragraph : "Building an enterprise doesn't need nightmare or cost your thousandsFelix is purpose built",},
+  {id:5,
+    icon: commit,
+    title: "Commitment",
+    paragraph : "Building an enterprise doesn't need nightmare or cost your thousandsFelix is purpose built.",},
+  {id:6,
+    icon: positive,
+    title: "Positivity",
+    paragraph : "Building an enterprise doesn't need nightmare or cost your thousandsFelix is purpose built.",},
+  
 ]

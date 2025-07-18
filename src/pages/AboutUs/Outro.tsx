@@ -25,19 +25,21 @@ export default function Outro() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {teamData.map((data, id) => (
-            <div className="flex flex-col gap-2 justify-items-start" key={id}>
+            <div className="flex flex-col gap-2" key={id}>
               <img
                 src={data.img}
                 alt={data.name + "image"}
                 className="rounded"
               />
-              <p>{data.name}</p>
-              <p>{data.position}</p>
+              <div className="text-white font-bold text-center">
+                <p>{data.name}</p>
+                <p>{data.position}</p>
+              </div>
             </div>
           ))}
         </div>
       </section>
-      <div>
+      <div className="mt-12 md:mt-24">
         <header>
           <h4 className="text-center justify-start text-zinc-800 text-5xl font-extrabold font-['Mulish'] leading-[55px] my-4">
             Our Investors
