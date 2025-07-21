@@ -41,7 +41,7 @@ export default function Outro() {
       </section>
       <div className="mt-12 md:mt-24">
         <header>
-          <h4 className="text-center justify-start text-zinc-800 text-5xl font-extrabold font-['Mulish'] leading-[55px] my-4">
+          <h4 className="text-center justify-start text-zinc-800 text-2xl md:text-5xl font-extrabold font-['Mulish'] leading-[55px] my-4">
             Our Investors
           </h4>
         </header>

@@ -16,7 +16,7 @@ export default function Mission() {
             </header>
           </div>
           <div>
-            <p className="text-[#808080] tracking-tight w-auto md:w-[250px] lg:w-[450px]">
+            <p className="text-[#808080] tracking-tight  w-auto md:w-[250px] lg:w-[450px]">
               Building an enterprise level site doesn't need nightmare or cost
               your thousands. Felix is purpose built for ease of use and
               completxability to create.
@@ -26,19 +26,19 @@ export default function Mission() {
             <ul className="flex flex-col gap-4">
               <div className="flex items-center gap-2">
                 <FaCheck className="text-green-400 p-1 rounded-full border-green-400 border" />
-                <li className="text-black font-medium text-sm lg:text-lg">
+                <li className="text-black font-medium text-sm md:text-[16px]">
                   Posting to social media, blogs, and messengers
                 </li>
               </div>
               <div className="flex items-center gap-2">
                 <FaCheck className="text-green-400 p-1 rounded-full border-green-400 border text-sm lg:text-lg" />
-                <li className="text-black font-medium">
+                <li className="text-black font-medium text-sm md:text-[16px]">
                   Working with images and videos
                 </li>
               </div>
               <div className="flex items-center gap-2">
                 <FaCheck className="text-green-400 p-1 rounded-full border-green-400 border text-sm lg:text-lg" />
-                <li className="text-black font-medium">
+                <li className="text-black font-medium text-sm md:text-[16px]">
                   The Future of Writing Blog Articles
                 </li>
               </div>
