@@ -30,7 +30,7 @@ const Hero: React.FC<HeroProps> = ({
         <div
           style={{
             backgroundImage: `url(${backgroundImage})`,
-            backgroundSize: "auto 1000px",
+            backgroundSize: "auto 1500px",
           }}
           className="w-[90%] my-0 mx-auto relative bg-cover bg-center bg-no-repeat rounded-lg mt-4 mb-8"
         >

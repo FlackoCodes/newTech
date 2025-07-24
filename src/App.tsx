@@ -1,4 +1,9 @@
-import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from "react-router-dom";
+import {
+  createBrowserRouter,
+  createRoutesFromElements,
+  Route,
+  RouterProvider,
+} from "react-router-dom";
 import MainLayout from "./Layout/MainLayout";
 import Features from "./pages/Features";
 import Home from "./pages/HomePage/Home";
@@ -14,7 +19,6 @@ import License from "./pages/License";
 import BlogSingle from "./pages/BlogSingle";
 
 function App() {
-
   const router = createBrowserRouter(
     createRoutesFromElements(
       <Route path="/" element={<MainLayout />}>
@@ -24,16 +28,12 @@ function App() {
         <Route path="/blog" element={<Blog />} />
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/About Us" element={<AboutComp />} />
-        <Route path="/Pricing Single" element={<PricingSingle
-        />} />
-        <Route path="/Case Study Single" element={<CaseStudySingle
-        />} />
-        <Route path="/Career Single" element={<CareerSingle
-        />} />
-        <Route path="/Licenses" element={<License
-        />} />
-        <Route path="/Blog Post" element={<BlogSingle
-        />} />
+        <Route path="/Pricing Single" element={<PricingSingle />} />
+        <Route path="/Case Study Single" element={<CaseStudySingle />} />
+        <Route path="/Career Single" element={<CareerSingle />} />
+        <Route path="/Licenses" element={<License />} />
+        <Route path="/Blog Post" element={<BlogSingle />} />
+        <Route path="/Features" element={<Features />} />
         <Route path="*" element={<Error_404 />} />
       </Route>
     )
@@ -42,4 +42,4 @@ function App() {
   return <RouterProvider router={router} />;
 }
 
-export default App
+export default App;

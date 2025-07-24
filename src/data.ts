@@ -354,3 +354,45 @@ export const valueData  = [
     paragraph : "Building an enterprise doesn't need nightmare or cost your thousandsFelix is purpose built.",},
   
 ]
+
+export const tiers = [
+  {
+    name: 'Freelancer',
+    id: 'tier-freelancer',
+    href: '#',
+    priceMonthly: '$19',
+    description: 'The essentials to provide your best work for clients.',
+    features: ['5 products', 'Up to 1,000 subscribers', 'Basic analytics', '48-hour support response time'],
+    mostPopular: false,
+  },
+  {
+    name: 'Startup',
+    id: 'tier-startup',
+    href: '#',
+    priceMonthly: '$49',
+    description: 'A plan that scales with your rapidly growing business.',
+    features: [
+      '25 products',
+      'Up to 10,000 subscribers',
+      'Advanced analytics',
+      '24-hour support response time',
+      'Marketing automations',
+    ],
+    mostPopular: true,
+  },
+  {
+    name: 'Enterprise',
+    id: 'tier-enterprise',
+    href: '#',
+    priceMonthly: '$99',
+    description: 'Dedicated support and infrastructure for your company.',
+    features: [
+      'Unlimited products',
+      'Unlimited subscribers',
+      'Advanced analytics',
+      '1-hour, dedicated support response time',
+      'Marketing automations',
+    ],
+    mostPopular: false,
+  },
+]
