@@ -13,7 +13,7 @@ export default function Pricing() {
         paragraph="Lorem Ipsum is simply dummy text of the printing
         and typesetting industry"
       />
-      <div className="my-2 md:my-12">
+      <div className="my-2">
         <PricingComp />
         <div className="w-[78%] my-0 mx-auto">
           <div className="my-2 md:my-4 bg-[#F6F6F6] text-white rounded-[5px] flex flex-col md:flex-row gap-4 md:gap-6 items-center p-4">
@@ -21,7 +21,6 @@ export default function Pricing() {
               <div className="text-center">
                 <img src={priceIcon} className="w-[100px]" alt="price-icon" />
               </div>
-
               <p className="font-bold text-lg text-center">
                 100% <span className="block">No-Risk</span>
               </p>
@@ -42,7 +41,6 @@ export default function Pricing() {
             </div>
           </div>
         </div>
-        {/* comparison */}
         <Comparison />
       </div>
     </>

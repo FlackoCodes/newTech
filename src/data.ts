@@ -15,12 +15,16 @@ import Princy from "./images/img/Princy.jpg"
 import Stef from "./images/img/Stef.jpg"
 import Kat from "./images/img/Kat.jpg"
 import icon from "./images/img/inovate.png"
-// import Super from "./images/img/Super.png"
-
 import own from "./images/img/Own.png"
 import team from "./images/img/Team.png"
 import commit from "./images/img/Commit.png"
 import positive from "./images/img/Positive.png"
+import analytic from "./images/img/analytics.png"
+import socialMedia from "./images/img/socialMedia.png"
+import boots from "./images/img/boots.png"
+import innovative from "./images/img/innovative.png"
+import technology from "./images/img/technology.png"
+import platform from "./images/img/platform.png"
 
 export type TierName = 'Standard' | 'Super' | 'Supreme';
 
@@ -485,3 +489,49 @@ export const sections: { name: string; features: Feature[] }[] = [
     ],
   },
 ];
+
+export const caseStudyData = [
+  {
+    id: 1,
+    name: "Analytic Solutions",
+    sub: "IT Technology",
+    backgroud: "#FFEDFE",
+    image: analytic
+  },
+  {
+    id: 2,
+    name: "2022 Social Media Benchmark Report",
+    sub: "cloud services",
+    backgroud: "#FFE7E3",
+    image: socialMedia
+  },
+  {
+    id: 3,
+    name: "Boosts Reach, Recruiting, and Revenue",
+    sub: "IT Technology",
+    backgroud: "#DAE4FF",
+    image: boots
+  },
+  {
+    id: 4,
+    name: "Innovative Interfaces",
+    sub: "Cyber Security",
+    backgroud: "#FFE7CA",
+    image: innovative
+  },
+  {
+    id: 5,
+    name: "Analytic Solutions",
+    sub: "IT Technology",
+    backgroud: "#FFD7E3",
+    image: technology
+  },
+  {
+    id: 6,
+    name: "Platform Integration",
+    sub: "IT Technology",
+    backgroud: "#D4F1EB",
+    image: platform
+  },
+  
+]
