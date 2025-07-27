@@ -15,11 +15,23 @@ import Princy from "./images/img/Princy.jpg"
 import Stef from "./images/img/Stef.jpg"
 import Kat from "./images/img/Kat.jpg"
 import icon from "./images/img/inovate.png"
-import growth from "./images/img/Growth.png"
+// import Super from "./images/img/Super.png"
+
 import own from "./images/img/Own.png"
 import team from "./images/img/Team.png"
 import commit from "./images/img/Commit.png"
 import positive from "./images/img/Positive.png"
+
+export type TierName = 'Standard' | 'Super' | 'Supreme';
+
+export type Tiers = {
+  [key in TierName]: boolean | string;
+};
+
+export interface Feature {
+  name: string;
+  tiers: Tiers;
+}
 
 const enterprise: string =
   "Building an enterprisedoesn't need nightmare or cost your thousands. Felix is purpose built.";
@@ -193,7 +205,7 @@ export const features = [
     title: "Save time by scheduling posts",
     description: enterprise,
     icon: icon1,
-    start: "get started",
+    start: "$7.99",
   },
   {
     id: 2,
@@ -333,8 +345,8 @@ export const valueData  = [
     paragraph : "Building an enterprise doesn't need nightmare or cost your thousandsFelix is purpose built.",
   },
   {id:2,
-    icon: growth,
-    title: "Growth",
+    icon: icon,
+    title: "Super",
     paragraph : "Building an enterprise doesn't need nightmare or cost your thousands Felix is purpose built.",},
   {id:3,
     icon: own,
@@ -357,20 +369,18 @@ export const valueData  = [
 
 export const tiers = [
   {
-    name: 'Freelancer',
-    id: 'tier-freelancer',
+    name: 'Standard',
+    id: 0,
     href: '#',
-    priceMonthly: '$19',
-    description: 'The essentials to provide your best work for clients.',
+    priceMonthly: '$7.99',
     features: ['5 products', 'Up to 1,000 subscribers', 'Basic analytics', '48-hour support response time'],
-    mostPopular: false,
+    mostPopular: true,
   },
   {
-    name: 'Startup',
-    id: 'tier-startup',
+    name: 'Standard',
+    id: 1,
     href: '#',
-    priceMonthly: '$49',
-    description: 'A plan that scales with your rapidly growing business.',
+    priceMonthly: '$14.99',
     features: [
       '25 products',
       'Up to 10,000 subscribers',
@@ -381,11 +391,10 @@ export const tiers = [
     mostPopular: true,
   },
   {
-    name: 'Enterprise',
-    id: 'tier-enterprise',
+    name: 'Supreme',
+    id: 2,
     href: '#',
-    priceMonthly: '$99',
-    description: 'Dedicated support and infrastructure for your company.',
+    priceMonthly: '$19.99',
     features: [
       'Unlimited products',
       'Unlimited subscribers',
@@ -393,6 +402,86 @@ export const tiers = [
       '1-hour, dedicated support response time',
       'Marketing automations',
     ],
-    mostPopular: false,
+    mostPopular: true,
   },
 ]
+
+
+export const ComparisonTiers = [
+  {
+    name: 'Standard' as const,
+    description: 'Everything you need to get started.',
+    priceMonthly: '$7.99',
+    href: '#',
+    highlights: [
+      { description: 'Facebook' },
+      { description: 'Twitter' },
+      { description: 'Instagram' },
+      { description: 'Google For My Business', disabled: true },
+      { description: 'Single sign-on (SSO)', disabled: true },
+      { description: 'Priority phone support', disabled: true },
+    ],
+  },
+  {
+    name: 'Super' as const,
+    description: 'All the extras for your growing team.',
+    priceMonthly: '$14.99',
+    href: '#',
+    highlights: [
+      { description: 'Custom domains' },
+      { description: 'Edge content delivery' },
+      { description: 'Advanced analytics' },
+      { description: 'Quarterly workshops' },
+      { description: 'Single sign-on (SSO)', disabled: true },
+      { description: 'Priority phone support', disabled: true },
+    ],
+  },
+  {
+    name: 'Supreme' as const,
+    description: 'Added flexibility at Supreme:.',
+    priceMonthly: '$19.99',
+    href: '#',
+    highlights: [
+      { description: 'Custom domains' },
+      { description: 'Edge content delivery' },
+      { description: 'Advanced analytics' },
+      { description: 'Quarterly workshops' },
+      { description: 'Single sign-on (SSO)' },
+      { description: 'Priority phone support' },
+    ],
+  },
+];
+
+export const sections: { name: string; features: Feature[] }[] = [
+  {
+    name: 'Social Platforms',
+    features: [
+      { name: 'Facebook', tiers: { Standard: true, Super: true, Supreme: true } },
+      { name: 'Instagram', tiers: { Standard: false, Super: false, Supreme: true } },
+      { name: 'Twitter', tiers: {  Standard: false, Super: false, Supreme: true} },
+      { name: 'Google For My Business', tiers: { Standard: false, Super: false, Supreme: true } },
+    ],
+  },
+  {
+    name: 'Publish',
+    features: [
+      { name: 'Monthly Posts', tiers: { Standard: true, Super: true, Supreme: true } },
+      { name: 'Publish Images', tiers: { Standard: false, Super: true, Supreme: true } },
+      { name: 'Post Recycling', tiers: { Standard: false, Super: false, Supreme: true } },
+      { name: 'Custom Queues', tiers: { Standard: false, Super: false, Supreme: true } },
+      { name: 'Hashtag Suggestions', tiers: { Standard: false, Super: false, Supreme: true }},
+      { name: 'Story Approvals', tiers: { Standard: false, Super: false, Supreme: true }},
+    ],
+  },
+  {
+    name: 'Analyze',
+    features: [
+      { name: 'Post Insights', tiers: { Standard: true, Super: true, Supreme: true } },
+      { name: 'Followers Growth Trends', tiers: { Standard: false, Super: true, Supreme: true } },
+      { name: 'Top Performing Posts	', tiers: { Standard: false, Super: false, Supreme: true } },
+      { name: 'Content Approvals', tiers: { Standard: false, Super: false, Supreme: true } },
+      { name: 'Leave notes', tiers: { Standard: false, Super: false, Supreme: true } },
+      { name: 'Live Chat', tiers: { Standard: false, Super: false, Supreme: true } },
+    ],
+  },
+];
