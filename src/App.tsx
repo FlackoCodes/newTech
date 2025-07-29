@@ -18,6 +18,7 @@ import CareerSingle from "./pages/CareerSingle";
 import License from "./pages/License";
 import BlogSingle from "./pages/BlogSingle";
 import CaseStudy from "./pages/CaseStudy";
+import { Career } from "./pages/Career";
 
 function App() {
   const router = createBrowserRouter(
@@ -30,6 +31,7 @@ function App() {
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/About Us" element={<AboutComp />} />
         <Route path="/Pricing Single" element={<PricingSingle />} />
+        <Route path="/Careers" element={<Career />} />
         <Route path="/Case Studies" element={<CaseStudy />} />
         <Route path="/Case Study Single" element={<CaseStudySingle />} />
         <Route path="/Career Single" element={<CareerSingle />} />

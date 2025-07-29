@@ -535,3 +535,70 @@ export const caseStudyData = [
   },
   
 ]
+export const careerData = [
+  {
+    name: "Marketing",
+    features: [
+      {
+        id: 1,
+        jobTitle: "Copywriter (Intermediate)",
+        location: "San Francisco, CA",
+        jobType: "Part Time",
+        jobDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+      },
+       {
+        id: 2,
+        jobTitle: "Copywriter (Intermediate)",
+        location: "New York",
+        jobType: "Part Time",
+        jobDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+      },
+    ]
+  },
+    {
+    name: "Development",
+    features: [
+      {
+        id: 3,
+        jobTitle: "Copywriter (Intermediate)",
+        location: "San Francisco, CA",
+        jobType: "Part Time",
+        jobDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+      },
+       {
+        id: 4,
+        jobTitle: "Dev Ops Engineer",
+        location: "Remote",
+        jobType: "Part Time",
+        jobDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+      },
+       {
+        id: 5,
+        jobTitle: "Frontend Javascript Team Lead",
+        location: "San Francisco, CA",
+        jobType: "Part Time",
+        jobDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+      },
+    ]
+  },
+      {
+    name: "Product",
+    features: [
+      {
+        id: 6,
+        jobTitle: "Product Manager (Payments & Monetization)",
+        location: "Toronto",
+        jobType: "Part Time",
+        jobDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+      },
+       {
+        id: 7,
+        jobTitle: "UX Designer (Intermediate - Senior)",
+        location: "New York",
+        jobType: "Part Time",
+        jobDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+      },
+  
+    ]
+  },
+];
