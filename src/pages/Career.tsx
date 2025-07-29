@@ -46,7 +46,9 @@ export const Career = () => {
                         <div className="my-2">
                           <button
                             type="button"
-                            className="rounded-full py-2 px-4 mr-auto lg:mr-16 border border-gray-300 cursor-pointer"
+                            className={`rounded-full py-2 px-4 mr-auto lg:mr-16 border border-gray-300 cursor-pointer text-[#2f2f2f] text-small font-normal ${
+                              feature.id === 3 && "bg-black"
+                            } ${feature.id === 3 && "text-white"}`}
                           >
                             Apply Now
                           </button>
