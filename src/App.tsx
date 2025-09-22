@@ -19,6 +19,7 @@ import License from "./pages/License";
 import BlogSingle from "./pages/BlogSingle";
 import CaseStudy from "./pages/CaseStudy";
 import { Career } from "./pages/Career";
+import Contact from "./pages/Contact";
 
 function App() {
   const router = createBrowserRouter(
@@ -38,6 +39,7 @@ function App() {
         <Route path="/Licenses" element={<License />} />
         <Route path="/Blog Post" element={<BlogSingle />} />
         <Route path="/Features" element={<Features />} />
+        <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<Error_404 />} />
       </Route>
     )

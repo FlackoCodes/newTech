@@ -3,6 +3,7 @@ import { LuDot } from "react-icons/lu";
 interface HeroProps {
   heading?: string;
   paragraph?: string;
+  paragraphTwo?: string;
   buttonText?: string;
   graphicsImage?: string;
   backgroundImage?: string;
@@ -16,6 +17,7 @@ const Hero: React.FC<HeroProps> = ({
   backgroundImage,
   heading,
   paragraph,
+  // paragraphTwo,
   buttonText,
   graphicsImage,
   profileImage,
@@ -41,9 +43,14 @@ const Hero: React.FC<HeroProps> = ({
             <h1 className="py-2 text-white font-bold md:text-2xl lg:text-3xl md:w-[600px] text-center">
               {heading}
             </h1>
-            <p className="text-white text-sm md:text-lg font-normal my-2 font-[poppins] text-center w-auto md:w-[500px]">
-              {paragraph}
-            </p>
+            <div className="flex gap-2">
+              <p className="text-white text-sm md:text-lg font-normal my-2 font-[poppins] text-center w-auto md:w-[500px]">
+                {paragraph}
+              </p>
+              {/* <p className="text-white text-sm md:text-lg font-normal my-2 font-[poppins] text-center w-auto md:w-[500px]">
+                {paragraphTwo}
+              </p> */}
+            </div>
 
             {profileImage && (
               <div className="flex flex-col md:flex-row gap-0 justify-center items-center md:gap-2 font-bold text-white">
