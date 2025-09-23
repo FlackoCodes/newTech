@@ -8,7 +8,6 @@ import MainLayout from "./Layout/MainLayout";
 import Features from "./pages/Features";
 import Home from "./pages/HomePage/Home";
 import Error_404 from "./pages/Error_404";
-import Resources from "./pages/Resources";
 import Blog from "./pages/Blog";
 import Pricing from "./pages/Pricing";
 import AboutComp from "./pages/AboutUs/index";
@@ -27,7 +26,6 @@ function App() {
       <Route path="/" element={<MainLayout />}>
         <Route index element={<Home />} />
         <Route path="/features" element={<Features />} />
-        <Route path="/resources" element={<Resources />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/About Us" element={<AboutComp />} />
