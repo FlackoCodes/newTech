@@ -4,7 +4,11 @@ import { useDispatch } from "react-redux";
 import { setActive } from "../store/logsSlice/logSlice";
 import { ChangeEvent, useState } from "react";
 import { signInWithEmailAndPassword } from "firebase/auth";
-import { auth } from "../firebase-config";
+// import { auth } from "./firebase-config";
+
+// auth
+
+import { auth } from "../../firebase-config";
 
 export default function Login({ setLogin }) {
   const [email, setEmail] = useState("");

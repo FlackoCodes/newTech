@@ -2,9 +2,9 @@ import { ChangeEvent, useState } from "react";
 import logo from "../images/logo.png";
 import { FaRegTimesCircle } from "react-icons/fa";
 import { useDispatch } from "react-redux";
-import { toggleBack } from "../store/logsSlice/logSlice";
+import { toggleBack } from "../../store/logSlice/logSlice";
 import { createUserWithEmailAndPassword } from "firebase/auth";
-import { auth } from "../firebase-config";
+import { auth } from "../../firebase-config";
 import { updateProfile } from "firebase/auth";
 
 export default function SignUp({ setLogin }) {

@@ -1,5 +1,6 @@
 import { initializeApp } from "firebase/app";
 import { FIREBASE_API } from "./constants";
+import { getAuth } from "firebase/auth";
 
 
 const firebaseConfig = {
