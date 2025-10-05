@@ -33,7 +33,7 @@ export default function Main() {
             your thousands. Felix is purpose built for ease of use and
             completxability to create even the most powerful of products.
           </p>
-          <div className="flex flex-col md:flex-row gap-2..5 items-center border-none my-4">
+          <div className="flex flex-col md:flex-row gap-2.5 items-center border-none my-4">
             <img src={icon} className="w-[60px]" alt="icon" />
             <div>
               <h5 className="text-lg md:text-2xl font-normal md:font-semibold">
