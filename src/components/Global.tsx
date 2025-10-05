@@ -54,12 +54,6 @@ function Global() {
             </div>
           </div>
         </section>
-        {/* <section id="faq" className="w-[80%] my-0 mx-auto">
-          <div className="my-6 md:my-16">
-        
-            <FAQ />
-          </div>
-        </section> */}
       </section>
     </>
   );
