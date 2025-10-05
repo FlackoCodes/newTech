@@ -1,25 +1,54 @@
-import { useState } from "react";
-import { useForm } from "react-hook-form";
+import { useState, ChangeEvent } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
-const FormsData = () => {
+export default function Forms() {
   const [formData, setFormData] = useState({
     fullName: "",
     email: "",
-    phone: "",
     subject: "",
-    compnay: "",
-    meessage: "",
+    company: "",
+    message: "",
   });
-};
-export default function Forms() {
+
+  const { fullName, email, subject, company, message } = formData;
+
+  const handleChange = (
+    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+  };
+
+  const notify = () => toast.success("Form submitted successfully!");
+
+  const handleSubmit = (e: ChangeEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    console.log(formData);
+    notify();
+    setFormData({
+      fullName: "",
+      email: "",
+      subject: "",
+      company: "",
+      message: "",
+    });
+  };
+
   return (
-    <section className="w-[85%] my-0 mx-auto z-50 mb-20  shadow-[0_10px_30px_-10px_rgba(0,0,0,0.15),0_20px_40px_-20px_rgba(255,182,119,0.25)]">
-      <form action="">
+    <section className="w-[85%] my-0 mx-auto z-50 mb-20 shadow-[0_10px_30px_-10px_rgba(0,0,0,0.15),0_20px_40px_-20px_rgba(255,182,119,0.25)]">
+      <form onSubmit={handleSubmit}>
         <div className="bg-white rounded-2xl p-6 md:p-12">
           <div className="flex flex-col md:flex-row justify-between gap-6 -my-4">
             <div className="flex-1">
               <label htmlFor="fullName">Full Name</label>
               <input
+                name="fullName"
+                value={fullName}
+                onChange={handleChange}
                 type="text"
                 id="fullName"
                 required
@@ -35,6 +64,9 @@ export default function Forms() {
                 Email
               </label>
               <input
+                name="email"
+                value={email}
+                onChange={handleChange}
                 type="email"
                 id="email"
                 required
@@ -42,6 +74,7 @@ export default function Forms() {
               />
             </div>
           </div>
+
           <div className="flex flex-col md:flex-row justify-between gap-6 my-6">
             <div className="flex-1">
               <label
@@ -51,6 +84,9 @@ export default function Forms() {
                 Company
               </label>
               <input
+                name="company"
+                value={company}
+                onChange={handleChange}
                 type="text"
                 id="company"
                 required
@@ -66,6 +102,9 @@ export default function Forms() {
                 Subject
               </label>
               <input
+                name="subject"
+                value={subject}
+                onChange={handleChange}
                 type="text"
                 id="subject"
                 required
@@ -73,6 +112,7 @@ export default function Forms() {
               />
             </div>
           </div>
+
           <div className="flex-1">
             <label
               htmlFor="message"
@@ -81,23 +121,24 @@ export default function Forms() {
               Message
             </label>
             <textarea
+              name="message"
+              value={message}
+              onChange={handleChange}
               rows={6}
-              cols={3}
               id="message"
               required
               className="w-full rounded border border-[#DCDCDC] bg-white p-2 focus:outline-none focus:border-blue-500"
             />
           </div>
+
           <div className="my-2">
             <button
-              onClick={() => {
-                console.log("Button clicked");
-              }}
               type="submit"
               className="bg-black text-white rounded-full p-4 cursor-pointer font-sans"
             >
               Send Message
             </button>
+            <ToastContainer position="top-center" autoClose={2000} />
           </div>
         </div>
       </form>
