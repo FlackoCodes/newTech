@@ -1,7 +1,6 @@
-// import Hero from "./HomePage/Hero";
-// import bgImg from "../images/img/hero-bg.jpg";
-// import featureImg from "../images/img/featuresImg.png";
-
+import Hero from "./HomePage/Hero";
+import bgImg from "../images/img/Hero-Image.jpg";
+import featureImg from "../images/img/featuresImg.png";
 import featureSocials from "../images/img/featureSocial.png";
 import featIcon from "../images/img/mainIcon.png";
 import hashtag from "../images/img/hashtag.png";
@@ -18,39 +17,42 @@ import { LuChevronLeft, LuChevronRight } from "react-icons/lu";
 export default function Features() {
   return (
     <>
-      {/* <Hero
+      <Hero
         backgroundImage={bgImg}
         heading="Easily Schedule
         Your Social Media Posts"
         graphicsImage={featureImg}
-      /> */}
-      <div className="w-[75%] my-0 mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div>
-            <img
-              src={featureSocials}
-              className="rounded w-[500px]"
-              alt="social media icons"
-            />
-          </div>
-          <div className="flex flex-col gap-2.5 lg:gap-8 justify-items-center py-8 lg:py-26">
-            <h4 className="font-normal md:font-bold text-zinc-900 tracking-tighttext-lg md:text-3xl w-auto md:w-[350px]">
-              All your social media accounts at one place
-            </h4>
-            <p className="text-[#808080]">
-              Building an enterprise level site doesn't need nightmare or cost
-              your thousands. Felix is purpose built for ease of use and
-              completxability to create even the most powerful of products.
-            </p>
-            <div className="flex flex-col md:flex-row gap-2.5 items-start md:items-center">
-              <img src={featIcon} className="w-[60px]" alt="icon" />
-              <div>
-                <h5 className="text-lg  md:text-2xl font-normal md:font-semibold">
-                  SmartSchedule
-                </h5>
-                <p className="text-[#808080]">
-                  Building an enterprise doesn't need your thousands.
-                </p>
+        heightClass="lg:h-[500px]"
+      />
+      <div className="mt-auto  lg:mt-120">
+        <div className="w-[75%] my-0 mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+              <img
+                src={featureSocials}
+                className="rounded w-[500px]"
+                alt="social media icons"
+              />
+            </div>
+            <div className="flex flex-col gap-2.5 lg:gap-8 justify-items-center py-8 lg:py-26">
+              <h4 className="font-normal md:font-bold text-zinc-900 tracking-tighttext-lg md:text-3xl w-auto md:w-[350px]">
+                All your social media accounts at one place
+              </h4>
+              <p className="text-[#808080]">
+                Building an enterprise level site doesn't need nightmare or cost
+                your thousands. Felix is purpose built for ease of use and
+                completxability to create even the most powerful of products.
+              </p>
+              <div className="flex flex-col md:flex-row gap-2.5 items-start md:items-center">
+                <img src={featIcon} className="w-[60px]" alt="icon" />
+                <div>
+                  <h5 className="text-lg  md:text-2xl font-normal md:font-semibold">
+                    SmartSchedule
+                  </h5>
+                  <p className="text-[#808080]">
+                    Building an enterprise doesn't need your thousands.
+                  </p>
+                </div>
               </div>
             </div>
           </div>

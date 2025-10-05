@@ -14,6 +14,7 @@ interface HeroProps {
   date?: number | string;
   time?: string;
   quote?: string;
+  heightClass?: string;
 }
 
 const Hero: React.FC<HeroProps> = ({
@@ -29,6 +30,7 @@ const Hero: React.FC<HeroProps> = ({
   time,
   name,
   quote,
+  heightClass,
 }) => {
   const FormsComponent = formsComponent;
 
@@ -39,7 +41,9 @@ const Hero: React.FC<HeroProps> = ({
           backgroundImage: `url(${backgroundImage})`,
           backgroundSize: "auto 1500px",
         }}
-        className="w-[90%] my-0 mx-auto relative bg-cover bg-center bg-no-repeat rounded-lg mt-4 mb-8"
+        className={`w-[90%] my-0 mx-auto relative bg-cover bg-center bg-no-repeat rounded-lg mt-4 mb-8 ${
+          heightClass || "auto"
+        }`}
       >
         <div className="flex flex-col items-center px-4 py-8 md:px-12 md:py-16 lg:px-24 lg:py-24">
           {quote && (
