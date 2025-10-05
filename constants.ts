@@ -1,0 +1,1 @@
+export const FIREBASE_API = "AIzaSyBGVhP6XUWcFPVdCCiXMsw9zZGnTQwRiTc"
