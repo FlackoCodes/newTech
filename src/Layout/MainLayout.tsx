@@ -2,12 +2,27 @@ import { Outlet } from "react-router-dom";
 import ScrollToTop from "../scrollToTop";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import { useEffect, useState } from "react";
 
 function MainLayout() {
+  const [currentUser, setCurrentUser] = useState(null);
+
+  useEffect(() => {
+    const unsubscribe = onAuthStateChanged(auth, (user) => {
+      if (user) {
+        setCurrentUser(user);
+      } else {
+        setCurrentUser(null);
+      }
+    });
+
+    return () => unsubscribe();
+  }, []);
+
   return (
     <>
       <ScrollToTop />
-      <Navbar />
+      <Navbar user={currentUser} />
       <Outlet />
       <Footer />
     </>

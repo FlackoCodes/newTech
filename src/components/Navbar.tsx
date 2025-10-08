@@ -6,7 +6,7 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import { useState } from "react";
 import MobileMenu from "./MobileMenu";
 
-function Navbar() {
+function Navbar({ user }) {
   const [showMenu, setShowMenu] = useState(false);
 
   const modalPopup = () => {

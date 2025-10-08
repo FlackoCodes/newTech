@@ -73,7 +73,7 @@ export const Career = () => {
         </h4>
         <p className="w-auto md:max-w-[700px] md:my-0 md:mx-auto text-[#808080] md:font-medium md:text-lg px-4 md:px-0">
           Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum been the industry's standard dummy{" "}
+          industry. Lorem Ipsum been the industry's standard dummy
         </p>
         <div className="w-fit my- mx-auto">
           <Link
