@@ -50,7 +50,7 @@ const Hero: React.FC<HeroProps> = ({
             <img src={quote} className="rounded-full" alt="quote icon" />
           )}
 
-          <h1 className="py-2 text-white font-bold md:text-2xl lg:text-3xl md:w-[600px] text-center">
+          <h1 className="py-2 text-white font-bold md:text-2xl lg:text-3xl md:max-w-[600px] text-center">
             {heading}
           </h1>
 
