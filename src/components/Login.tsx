@@ -1,12 +1,9 @@
 import logo from "../images/logo.png";
 import { FaRegTimesCircle } from "react-icons/fa";
 import { useDispatch } from "react-redux";
-import { setActive } from "../store/logsSlice/logSlice";
+import { setActive } from "../../store/logSlice/logSlice";
 import { ChangeEvent, useState } from "react";
 import { signInWithEmailAndPassword } from "firebase/auth";
-// import { auth } from "./firebase-config";
-
-// auth
 
 import { auth } from "../../firebase-config";
 
