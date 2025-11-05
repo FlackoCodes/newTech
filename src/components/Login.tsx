@@ -4,32 +4,30 @@ import { useDispatch } from "react-redux";
 import { setActive } from "../../store/logSlice/logSlice";
 import { ChangeEvent, useState } from "react";
 import { signInWithEmailAndPassword } from "firebase/auth";
-
 import { auth } from "../../firebase-config";
 
-export default function Login({ setLogin }) {
+interface LoginProps {
+  setLogin: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+export default function Login({ setLogin }: LoginProps) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
+
+  const dispatch = useDispatch();
 
   const login = async (e: ChangeEvent<HTMLFormElement>) => {
     e.preventDefault();
     try {
       const user = await signInWithEmailAndPassword(auth, email, password);
       console.log(user);
-
       closeLogin();
     } catch (error) {
       setError("invalid credentials");
       console.log(error);
     }
   };
-
-  const dispatch = useDispatch();
-
-  // const toggleLogs = () => {
-  //   dispatch(toggleBack());
-  // };
 
   const showSingUp = () => {
     dispatch(setActive());
@@ -52,26 +50,26 @@ export default function Login({ setLogin }) {
           <FaRegTimesCircle size={20} />
         </button>
 
-        <header className="flex items-center justify-between mb-4">
-          <h1 className="text-lg font-semibold">Login to</h1>
-          <img src={logo} alt="logo" className="h-10" />
+        <header className="flex gap-2 md:gap-0  md:items-center md:justify-between mb-4">
+          <h1 className="text-sm md:text-lg font-semibold">Login to</h1>
+          <img
+            src={logo}
+            alt="logo"
+            className="w-[50%] md:w-full h-auto md:h-10"
+          />
         </header>
 
         <form onSubmit={login}>
           <input
             value={email}
-            onChange={(e) => {
-              setEmail(e.target.value);
-            }}
+            onChange={(e) => setEmail(e.target.value)}
             type="text"
             className="rounded-md outline-none border-gray-300 border-[1.5px] w-full py-2 px-3 mb-4"
             placeholder="Email address"
           />
           <input
             value={password}
-            onChange={(e) => {
-              setPassword(e.target.value);
-            }}
+            onChange={(e) => setPassword(e.target.value)}
             type="password"
             className="rounded-md outline-none border-gray-300 border-[1.5px] w-full py-2 px-3 mb-4"
             placeholder="Password"
@@ -83,7 +81,7 @@ export default function Login({ setLogin }) {
             Login
           </button>
           <p className="text-[#757C86] mt-4 text-center">
-            Don't have an account?
+            Don&apos;t have an account?
             <span
               className="text-[#3084A9] ml-1 cursor-pointer"
               onClick={showSingUp}

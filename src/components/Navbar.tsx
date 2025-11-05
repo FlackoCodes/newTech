@@ -11,14 +11,17 @@ import MobileMenu from "./MobileMenu";
 import SignUp from "./SignUp";
 import Login from "./Login";
 import { auth } from "../../firebase-config";
-import { signOut } from "firebase/auth";
+import { signOut, User } from "firebase/auth";
 
-function Navbar({ user }) {
+interface NavbarProps {
+  user: User | null;
+}
+
+function Navbar({ user }: NavbarProps) {
   const [showMenu, setShowMenu] = useState(false);
+  const [login, setLogin] = useState(false);
   const dispatch = useDispatch();
   const isActive = useSelector((state: RootState) => state.log.isActive);
-
-  const [login, setLogin] = useState(false);
 
   const showLogs = () => {
     dispatch(setActive());
@@ -35,15 +38,16 @@ function Navbar({ user }) {
 
   return (
     <>
-      <nav className="h-[65px] top-[36px] left-[100px]  flex justify-between items-center py-12">
+      <nav className="h-[65px] top-[36px] left-[100px] flex justify-between items-center py-12">
         <div>
           <NavLink to={"/"}>
             <img className="w-[100px] md:w-[150px]" src={logo} alt="logo" />
           </NavLink>
         </div>
+
         <div className="hidden lg:flex md:justify-between items-center">
           <ul className="flex gap-8">
-            <li className="">
+            <li>
               <div className="flex flex-col items-start">
                 <span className="text-[9px] font-bold text-[#5236FF]">01</span>
                 <NavLink
@@ -54,7 +58,7 @@ function Navbar({ user }) {
                 </NavLink>
               </div>
             </li>
-            <li className="">
+            <li>
               <div className="flex flex-col items-start">
                 <span className="text-[9px] font-bold text-[#CFCFCF]">02</span>
                 <div className="flex items-center gap-1">
@@ -68,7 +72,7 @@ function Navbar({ user }) {
                 </div>
               </div>
             </li>
-            <li className="">
+            <li>
               <div className="flex flex-col items-start">
                 <span className="text-[9px] font-bold text-[#CFCFCF]">03</span>
                 <NavLink
@@ -79,7 +83,7 @@ function Navbar({ user }) {
                 </NavLink>
               </div>
             </li>
-            <li className="">
+            <li>
               <div className="flex flex-col items-start">
                 <span className="text-[9px] font-bold text-[#CFCFCF]">04</span>
                 <NavLink
@@ -92,14 +96,16 @@ function Navbar({ user }) {
             </li>
           </ul>
         </div>
-        <div className="">
+
+        <div>
           <div className="hidden lg:flex justify-between items-center gap-6">
             <div className="bg-[#5956E9] p-1 gap-10 flex justify-center rounded-full">
               <PiShoppingCartThin className=" text-white" />
             </div>
+
             {user ? (
               <div className="flex items-center gap-x-3">
-                <p className="text-[0046FF] font-serif text-sm md:text-lg font-bold ml-2">
+                <p className="text-[#0046FF] font-serif text-sm md:text-lg font-bold ml-2">
                   Welcome, {user.displayName || "User"}
                 </p>
                 <button
@@ -112,16 +118,18 @@ function Navbar({ user }) {
             ) : (
               <button
                 onClick={showLogs}
-                className="border-none rounded-sm bg-[#3084A9] text-white py-1 px-3 capitalize cursor-pointer"
+                className="border-none rounded-sm bg-[#5236FF] text-white py-1 px-3 capitalize cursor-pointer"
               >
                 login/signup
               </button>
             )}
           </div>
+
           <RxHamburgerMenu className="block lg:hidden" onClick={modalPopup} />
         </div>
       </nav>
-      {showMenu && <MobileMenu closeModal={modalPopup} />}
+
+      {showMenu && <MobileMenu closeModal={modalPopup} setLogin={setLogin} />}
       {isActive && <SignUp setLogin={setLogin} />}
       {login && <Login setLogin={setLogin} />}
     </>

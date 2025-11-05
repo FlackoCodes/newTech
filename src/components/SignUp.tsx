@@ -7,7 +7,11 @@ import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../../firebase-config";
 import { updateProfile } from "firebase/auth";
 
-export default function SignUp({ setLogin }) {
+interface LoginProps {
+  setLogin: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+export default function SignUp({ setLogin }: LoginProps) {
   const [firstName, setFirstName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
