@@ -1,5 +1,5 @@
 import { ChangeEvent, useState } from "react";
-import logo from "../images/logo.png";
+import logo from "../images/cta/Logo (1).png";
 import { FaRegTimesCircle } from "react-icons/fa";
 import { useDispatch } from "react-redux";
 import { toggleBack } from "../../store/logSlice/logSlice";
@@ -92,7 +92,7 @@ export default function SignUp({ setLogin }) {
           />
           <button
             type="submit"
-            className="w-full py-2 px-4 bg-[#5956E9] text-white rounded-md capitalize"
+            className="w-full py-2 px-4 bg-[#5956E9] text-white rounded-md capitalize cursor-pointer"
           >
             Create Account
           </button>

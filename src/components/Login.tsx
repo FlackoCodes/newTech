@@ -1,4 +1,4 @@
-import logo from "../images/logo.png";
+import logo from "../images/cta/Logo (1).png";
 import { FaRegTimesCircle } from "react-icons/fa";
 import { useDispatch } from "react-redux";
 import { setActive } from "../../store/logSlice/logSlice";

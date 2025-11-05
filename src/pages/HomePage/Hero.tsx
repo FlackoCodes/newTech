@@ -55,7 +55,7 @@ const Hero: React.FC<HeroProps> = ({
           </h1>
 
           <div className="flex gap-2">
-            <p className="text-white text-sm md:text-lg font-normal my-2 font-[poppins] text-center w-auto md:w-[500px]">
+            <p className="text-white text-sm md:text-lg font-medium my-2 font-['Poppins'] text-center w-auto md:w-[500px]">
               {paragraph}
             </p>
           </div>

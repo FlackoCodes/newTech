@@ -3,11 +3,30 @@ import logo from "../images/cta/Logo (1).png";
 import { PiShoppingCartThin } from "react-icons/pi";
 import { FaAngleDown } from "react-icons/fa";
 import { RxHamburgerMenu } from "react-icons/rx";
+import { RootState } from "../../store/store";
+import { setActive } from "../../store/logSlice/logSlice";
 import { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import MobileMenu from "./MobileMenu";
+import SignUp from "./SignUp";
+import Login from "./Login";
+import { auth } from "../../firebase-config";
+import { signOut } from "firebase/auth";
 
 function Navbar({ user }) {
   const [showMenu, setShowMenu] = useState(false);
+  const dispatch = useDispatch();
+  const isActive = useSelector((state: RootState) => state.log.isActive);
+
+  const [login, setLogin] = useState(false);
+
+  const showLogs = () => {
+    dispatch(setActive());
+  };
+
+  async function logout() {
+    await signOut(auth);
+  }
 
   const modalPopup = () => {
     setShowMenu(!showMenu);
@@ -16,7 +35,7 @@ function Navbar({ user }) {
 
   return (
     <>
-      <nav className=" h-[65px] top-[36px] left-[100px]  flex justify-between items-center py-12">
+      <nav className="h-[65px] top-[36px] left-[100px]  flex justify-between items-center py-12">
         <div>
           <NavLink to={"/"}>
             <img className="w-[100px] md:w-[150px]" src={logo} alt="logo" />
@@ -78,14 +97,33 @@ function Navbar({ user }) {
             <div className="bg-[#5956E9] p-1 gap-10 flex justify-center rounded-full">
               <PiShoppingCartThin className=" text-white" />
             </div>
-            <button className="py-[8px] px-[24px] border border-[#E0E0E0] rounded-[62px] cursor-pointer text-[#2F2F2F] font-bold">
-              Sign In
-            </button>
+            {user ? (
+              <div className="flex items-center gap-x-3">
+                <p className="text-[0046FF] font-serif text-sm md:text-lg font-bold ml-2">
+                  Welcome, {user.displayName || "User"}
+                </p>
+                <button
+                  onClick={logout}
+                  className="border-none rounded-sm bg-[#3084A9] text-white py-0.5 px-1.5 md:py-1 md:px-4 capitalize cursor-pointer"
+                >
+                  logout
+                </button>
+              </div>
+            ) : (
+              <button
+                onClick={showLogs}
+                className="border-none rounded-sm bg-[#3084A9] text-white py-1 px-3 capitalize cursor-pointer"
+              >
+                login/signup
+              </button>
+            )}
           </div>
           <RxHamburgerMenu className="block lg:hidden" onClick={modalPopup} />
         </div>
       </nav>
       {showMenu && <MobileMenu closeModal={modalPopup} />}
+      {isActive && <SignUp setLogin={setLogin} />}
+      {login && <Login setLogin={setLogin} />}
     </>
   );
 }
